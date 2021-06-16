@@ -11,7 +11,7 @@ const Navbar = () => {
 
                     {/* <Image className="dumbbell" src={dumbBells} alt='dumbbells logo' /> */}
 
-                    <Link href='/'><span className="font-semibold text-xl tracking-tight text-green-200">Workout App</span></Link>
+                    <Link href='/' forwardRef><span className="font-semibold text-xl tracking-tight text-green-200">Workout App</span></Link>
                 </div>
 
                 <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
@@ -20,32 +20,32 @@ const Navbar = () => {
                 </label>
 
                 <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
-                    <Link href='/'><li className="border-t md:border-none">
+                    <Link href='/' forwardRef><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</p>
                     </li></Link>
 
 
-                    <Link href='/arms'><li className="border-t md:border-none">
+                    <Link href='/arms' forwardRef><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Arms</p>
                     </li></Link>
 
-                    <Link href='/legs'><li className="border-t md:border-none">
+                    <Link href='/legs' forwardRef><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Legs</p>
                     </li></Link>
 
-                    <Link href='/glutes'><li className="border-t md:border-none">
+                    <Link href='/glutes' forwardRef><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Glutes</p>
                     </li></Link>
 
-                    <Link href='/about'><li className="border-t md:border-none">
+                    <Link href='/about' forwardRef><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</p>
                     </li></Link>
 
-                    <Link href='/stopwatch'><li className="border-t md:border-none">
+                    <Link href='/stopwatch' forwardRef><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">StopWatch</p>
                     </li></Link>
 
-                    <Link href='/timer'><li className="border-t md:border-none">
+                    <Link href='/timer' forwardRef><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Timer</p>
                     </li></Link>
 
