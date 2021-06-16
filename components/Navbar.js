@@ -11,7 +11,7 @@ const Navbar = () => {
 
                     {/* <Image className="dumbbell" src={dumbBells} alt='dumbbells logo' /> */}
 
-                    <Link href='/'><span className="font-semibold text-xl tracking-tight">Workout App</span></Link>
+                    <Link href='/'><span className="font-semibold text-xl tracking-tight text-green-200">Workout App</span></Link>
                 </div>
 
                 <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
