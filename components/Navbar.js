@@ -1,4 +1,6 @@
-import Link from 'next/link'
+import Link from 'next/link';
+// import Image from 'next/image';
+// import dumbBells from '../public/dumbells.jpg'
 
 
 const Navbar = () => {
@@ -7,7 +9,7 @@ const Navbar = () => {
             <nav className="nav flex flex-wrap items-center justify-between px-4">
                 <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
 
-                    <img className="w-16 md:w-auto" src='https://res.cloudinary.com/dejg3dz16/image/upload/v1623797843/dumbbell_2__28b_w_29_fk9bgj.webp' alt='dumbbells logo' />
+                    {/* <Image className="dumbbell" src={dumbBells} alt='dumbbells logo' /> */}
 
                     <Link href='/'><span className="font-semibold text-xl tracking-tight">Workout App</span></Link>
                 </div>
