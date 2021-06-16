@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Check Out This Video</div>
-            {/* <a  className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Beginners Full Body Workout</a> */}
+            {/* <a className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Beginners Full Body Workout</a> */}
             {/* <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> */}
           </div>
         </div>
