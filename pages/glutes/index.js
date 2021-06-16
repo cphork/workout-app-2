@@ -23,6 +23,13 @@ const Glutes = ({ glutes }) => {
                     <h1 className='mt-16 text-center text-2xl'>{glute.title}</h1>
                     <h3 className='text-center text-lg'>{glute.description}</h3>
                     <h3 className='mt-8 ml-8 mr-8 text-center text-base mb-16'>{glute.list}</h3>
+                    <button
+                        className='heart-btn ml-44 bg-red-500 rounded-full h-12 w-14 mb-24'
+                        onClick={() =>
+                            addFaveSong(song)}
+                    >&#9825;
+                        </button>
+
                 </div>
             ))}
         </div>

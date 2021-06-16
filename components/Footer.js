@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div>
+        <div className='text-lg'>
             Copyright 2021 Workout App
         </div>
     );

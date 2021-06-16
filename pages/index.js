@@ -6,8 +6,10 @@ import Glutes from '../public/glutes.jpg';
 
 
 export default function Home() {
+
   return (
     <>
+
       {/* VIDEO PLACE HOLDER */}
       {/* <iframe className='video' width="350" height="300" src="https://www.youtube.com/embed/Vzo-EL_62fQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
 
