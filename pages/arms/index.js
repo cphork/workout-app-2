@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import FavoriteArms from '../../components/FavoriteArms'
+import Favorite from '../favorite'
 
 
 export const getStaticProps = async () => {
@@ -14,23 +14,56 @@ export const getStaticProps = async () => {
 }
 
 
-
-
-
-const handleDelete = () => {
-
-}
-
-const deleteFaveWorkout = () => {
-
-}
-
-const addFaveWorkout = (arm) => {
-    setFaveWorkout([...faveWorkout, arm])
-}
-
 const Workout = ({ arms }) => {
     console.log('DATA WORKING', arms)
+
+
+
+    const [faveWorkout, setFaveWorkout] = useState([])
+
+
+    const getWorkouts = () => {
+        fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev' + '/arms')
+            .then((resp) => resp.json())
+            .then((data) => {
+                setFaveWorkout(data.body)
+                console.log(data)
+            })
+    }
+
+    useEffect(() => getWorkouts(), [])
+
+    const addFaveWorkout = (arm) => {
+        setFaveWorkout([...faveWorkout, arm])
+    }
+
+    const deleteFaveWorkout = (index) => setFaveWorkout(faveWorkout.filter(
+        (currentValue, currentIndex) => currentIndex !== index))
+
+
+
+    const handleSubmit = (newArm) => {
+        fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev' + '/arms', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newArm)
+        })
+            .then(() => getWorkouts())
+    }
+
+
+    // DELETE
+
+    const handleDelete = (arm) => {
+        fetch(url + '/arms' + arm.TunrId, {
+            method: 'DELETE',
+        })
+            .then(() => getWorkouts())
+    }
+
+
 
 
 
@@ -48,28 +81,19 @@ const Workout = ({ arms }) => {
                     <h3 className='text-center text-lg'>{arm.description}</h3>
                     <h3 className='mt-8 ml-8 mr-8 text-center text-base mb-16'>{arm.list}</h3>
                     <button
-                        className='heart-btn ml-44 bg-red-500 rounded-full h-12 w-14 mb-24'
+                        className='heart-btn ml-44 bg-green-500 rounded-full h-12 w-14 mb-24'
                         onClick={() => {
-                            console.log(arm)
                             addFaveWorkout(arm)
                         }}
                     >&#9825;
-                        </button>
-
-                    <button
-                        className='heart-btn ml-44 bg-red-500 rounded-full h-12 w-18 mb-24'
-                        onClick={() =>
-                            deleteFaveWorkout(index)}
-                    >Remove
-
-                        </button>
+                    </button>
 
                 </div>
             ))}
 
-            <FavoriteArms
-                // faveWorkout={faveWorkout}
+            <Favorite
                 addFaveWorkout={addFaveWorkout}
+                faveWorkout={faveWorkout}
                 handleDelete={handleDelete}
                 deleteFaveWorkout={deleteFaveWorkout}
             />
