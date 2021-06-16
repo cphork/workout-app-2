@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Check Out This Video</div>
-            {/* <a className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Beginners Full Body Workout</a> */}
+            {/* <p className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Beginners Full Body Workout</p> */}
             {/* <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> */}
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Arms Workout</div>
-            <a className="block mt-1 text-lg leading-tight font-medium text-black hover:underline text-center">Learn Techniques To Target Your Arms</a>
+            <p className="block mt-1 text-lg leading-tight font-medium text-black hover:underline text-center">Learn Techniques To Target Your Arms</p>
             {/* <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> */}
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Legs Workout</div>
-            <a className="block mt-1 text-lg leading-tight font-medium text-black hover:underline text-center">Power Through These Leg Workouts!</a>
+            <p className="block mt-1 text-lg leading-tight font-medium text-black hover:underline text-center">Power Through These Leg Workouts!</p>
             {/* <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> */}
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Glutes Workout</div>
-            <a className="block mt-1 text-lg leading-tight font-medium text-black hover:underline text-center">Burn Your Glutes For Tighter Buns!</a>
+            <p className="block mt-1 text-lg leading-tight font-medium text-black hover:underline text-center">Burn Your Glutes For Tighter Buns!</p>
             {/* <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> */}
           </div>
         </div>
