@@ -1,4 +1,4 @@
-import Link from '@next/next/link-passhref';
+import Link from 'next/link';
 // import Image from 'next/image';
 // import dumbBells from '../public/dumbells.jpg'
 
