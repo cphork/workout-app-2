@@ -80,7 +80,7 @@ a {
   margin: auto;
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -118,7 +118,7 @@ a {
   margin-left: 30px;
   margin-top: 150px;
   margin-bottom: 300px;
-  /* margin-right: 30px; */
+  
   border: 2px solid grey;
   border-radius: 4px;
   padding: 20px;
@@ -181,4 +181,4 @@ button:hover {
   font-size: 36px;
   margin: 5px 0;
 }
-
+ */

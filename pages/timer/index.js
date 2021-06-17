@@ -67,51 +67,65 @@ class Countdown extends Component {
         let hours = ("0" + Math.floor((timerTime / 3600000) % 60)).slice(-2);
 
         return (
-            <div className="Countdown">
-                <div className="Countdown-header">Countdown</div>
-                <div className="Countdown-label">Hours : Minutes : Seconds</div>
-                <div className="Countdown-display">
-                    <button onClick={() => this.adjustTimer("incHours")}>&#8679;</button>
-                    <button onClick={() => this.adjustTimer("incMinutes")}>
-                        &#8679;
-          </button>
-                    <button onClick={() => this.adjustTimer("incSeconds")}>
-                        &#8679;
-          </button>
+            <div className="box-content border-2 mt-24 ml-5 mr-5 py-16 bg-gray-500 mb-80">
+                <div className="text-center font-mono text-2xl text-green-200">Countdown</div>
+                <div className="text-center font-hyeon text-xl">Hours : Minutes : Seconds</div>
+                <div className="mr-85">
+                    <button
+                        onClick={() => this.adjustTimer("incHours")}>
+                        &#8657;
+                    </button>
 
-                    <div className="Countdown-time">
+                    <button
+                        onClick={() => this.adjustTimer("incMinutes")}>
+                        &#8657;
+                    </button>
+
+                    <button
+                        onClick={() => this.adjustTimer("incSeconds")}>
+                        &#8657;
+                    </button>
+
+                    <div className="text-center font-mono text-xl text-green-200">
                         {hours} : {minutes} : {seconds}
                     </div>
 
-                    <button onClick={() => this.adjustTimer("decHours")}>&#8681;</button>
-                    <button onClick={() => this.adjustTimer("decMinutes")}>
-                        &#8681;
-          </button>
-                    <button onClick={() => this.adjustTimer("decSeconds")}>
-                        &#8681;
-          </button>
+                    <button
+                        onClick={() => this.adjustTimer("decHours")}>
+                        &#8659;
+                    </button>
+
+                    <button
+                        onClick={() => this.adjustTimer("decMinutes")}>
+                        &#8659;
+                    </button>
+
+                    <button
+                        onClick={() => this.adjustTimer("decSeconds")}>
+                        &#8659;
+                    </button>
                 </div>
 
                 {timerOn === false && (timerStart === 0 || timerTime === timerStart) && (
-                    <button className="Button-start" onClick={this.startTimer}>
+                    <button className="text-green-500 box-content bg-gray-500 p-4 border-4 mt-8" onClick={this.startTimer}>
                         Start
                     </button>
                 )}
                 {timerOn === true && timerTime >= 1000 && (
-                    <button className="Button-stop" onClick={this.stopTimer}>
+                    <button className="text-red-500 box-content bg-gray-500 p-4 border-4 mt-8" onClick={this.stopTimer}>
                         Stop
                     </button>
                 )}
                 {timerOn === false &&
                     (timerStart !== 0 && timerStart !== timerTime && timerTime !== 0) && (
-                        <button className="Button-start" onClick={this.startTimer}>
+                        <button className="box-content bg-gray-500 p-4 border-4 mt-8" onClick={this.startTimer}>
                             Resume
                         </button>
                     )}
 
                 {(timerOn === false || timerTime < 1000) &&
                     (timerStart !== timerTime && timerStart > 0) && (
-                        <button className="Button-reset" onClick={this.resetTimer}>
+                        <button className="text-red-500 box-content bg-gray-500 p-4 border-4 mt-8" onClick={this.resetTimer}>
                             Reset
                         </button>
                     )}

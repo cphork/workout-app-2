@@ -53,7 +53,7 @@ const Workout = ({ arms }) => {
 
     return (
         <div>
-            <h1 className='text-center mt-16 text-3xl font-perm text-green-200'>Arms Workout</h1>
+            <h1 className='text-center mt-32 text-3xl font-perm text-green-200'>Arms Workout</h1>
             <iframe className='mt-4 ml-8' width="350" height="360" src="https://www.youtube.com/embed/OQdtMrQ-Y8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <iframe className='mt-8 ml-8' width="350" height="360" src="https://www.youtube.com/embed/UyTR2EjTAXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
