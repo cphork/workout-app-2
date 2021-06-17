@@ -1,4 +1,4 @@
-import Link from 'next/link-passhref';
+import Link from 'next/link';
 import Image from 'next/image';
 import Arms from '../public/arms.jpg';
 import Legs from '../public/legs.jpg';
@@ -31,7 +31,7 @@ export default function Home() {
       <div className="max-w-md mx-auto bg-green-500 w-72 mt-16 group-hover:text-gray-900 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0">
-            <Link href='/arms'><Image className="h-48  w-full object-cover md:h-full md:w-48" src={Arms} alt="Man looking at item at a store" /></Link>
+            <Link href='/arms' passHref><Image className="h-48  w-full object-cover md:h-full md:w-48" src={Arms} alt="Man looking at item at a store" /></Link>
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Arms Workout</div>
@@ -45,7 +45,7 @@ export default function Home() {
       <div className="max-w-md mx-auto bg-green-500 w-72 mt-16 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0">
-            <Image className="h-48 w-full object-cover md:h-full md:w-48" src={Legs} alt="Man looking at item at a store" />
+            <Link href='/legs' passHref><Image className="h-48 w-full object-cover md:h-full md:w-48" src={Legs} alt="Man looking at item at a store" /></Link>
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Legs Workout</div>
@@ -59,7 +59,7 @@ export default function Home() {
       <div className="max-w-md mx-auto bg-green-500 w-72 mt-16 mb-16 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0">
-            <Image className="h-48 w-full object-cover md:h-full md:w-48" src={Glutes} alt="Man looking at item at a store" />
+            <Link href='/glutes' passHref><Image className="h-48 w-full object-cover md:h-full md:w-48" src={Glutes} alt="Man looking at item at a store" /></Link>
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Glutes Workout</div>

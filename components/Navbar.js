@@ -1,4 +1,4 @@
-import Link from 'next/link-passhref';
+import Link from 'next/link';
 // import Image from 'next/image';
 // import dumbBells from '../public/dumbells.jpg'
 
@@ -11,7 +11,7 @@ const Navbar = () => {
 
                     {/* <Image className="w-24" src={dumbBells} alt='dumbbells logo' /> */}
 
-                    <Link href='/'><span className="font-semibold text-xl tracking-tight text-green-200 font-perm underline text-3xl">Workout App</span></Link>
+                    <Link href='/' passHref><span className="font-semibold text-xl tracking-tight text-green-200 font-perm underline text-3xl">Workout App</span></Link>
                 </div>
 
                 <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
@@ -21,32 +21,32 @@ const Navbar = () => {
                 </label>
 
                 <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
-                    <Link href='/'><li className="border-t md:border-none">
+                    <Link href='/' passHref><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</p>
                     </li></Link>
 
 
-                    <Link href='/arms'><li className="border-t md:border-none">
+                    <Link href='/arms' passHref><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Arms</p>
                     </li></Link>
 
-                    <Link href='/legs'><li className="border-t md:border-none">
+                    <Link href='/legs' passHref><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Legs</p>
                     </li></Link>
 
-                    <Link href='/glutes'><li className="border-t md:border-none">
+                    <Link href='/glutes' passHref><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Glutes</p>
                     </li></Link>
 
-                    <Link href='/about'><li className="border-t md:border-none">
+                    <Link href='/about' passHref><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</p>
                     </li></Link>
 
-                    <Link href='/stopwatch'><li className="border-t md:border-none">
+                    <Link href='/stopwatch' passHref><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">StopWatch</p>
                     </li></Link>
 
-                    <Link href='/timer'><li className="border-t md:border-none">
+                    <Link href='/timer' passHref><li className="border-t md:border-none">
                         <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Timer</p>
                     </li></Link>
 
