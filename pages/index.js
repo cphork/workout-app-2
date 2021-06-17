@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next/link-passhref';
 import Image from 'next/image';
 import Arms from '../public/arms.jpg';
 import Legs from '../public/legs.jpg';
