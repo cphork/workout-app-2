@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Favorite from '../favorite'
 
 
@@ -69,9 +69,9 @@ const Workout = ({ arms }) => {
 
             {arms.body.map((arm) => (
                 <div key={arm.armsId}>
-                    <h1 className='mt-16 text-center text-2xl'>{arm.title}</h1>
-                    <h3 className='text-center text-lg'>{arm.description}</h3>
-                    <h3 className='mt-8 ml-8 mr-8 text-center text-base mb-16 text-white'>{arm.list}</h3>
+                    <h1 className='mt-16 text-center text-2xl font-perm'>{arm.title}</h1>
+                    <h3 className='text-center text-lg font-mono'>{arm.description}</h3>
+                    <h3 className='mt-8 ml-8 mr-8 text-center text-base mb-16 text-white font-hyeon'>{arm.list}</h3>
                     <button
                         className='heart-btn ml-44 bg-green-500 rounded-full h-12 w-14 mb-16'
                         onClick={() => {

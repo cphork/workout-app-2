@@ -11,7 +11,9 @@ const Navbar = () => {
 
                     {/* <Image className="w-24" src={dumbBells} alt='dumbbells logo' /> */}
 
-                    <Link href='/'><span className="font-semibold text-xl tracking-tight text-green-200 font-perm underline text-3xl">Workout App</span></Link>
+                    <Link href='/'>
+                        <a href='/'><span className="font-semibold text-xl tracking-tight text-green-200 font-perm underline text-3xl">Workout App</span></a>
+                    </Link>
                 </div>
 
                 <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
@@ -21,34 +23,48 @@ const Navbar = () => {
                 </label>
 
                 <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
-                    <Link href='/'><li className="border-t md:border-none">
-                        <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</p>
-                    </li></Link>
+                    <Link href='/'>
+                        <li className="border-t md:border-none">
+                            <a href='/'><p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</p></a>
+                        </li>
+                    </Link>
 
 
-                    <Link href='/arms'><li className="border-t md:border-none">
-                        <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Arms</p>
-                    </li></Link>
+                    <Link href='/arms'>
+                        <li className="border-t md:border-none">
+                            <a href='/arms'><p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Arms</p></a>
+                        </li>
+                    </Link>
 
-                    <Link href='/legs'><li className="border-t md:border-none">
-                        <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Legs</p>
-                    </li></Link>
+                    <Link href='/legs'>
+                        <li className="border-t md:border-none">
+                            <a href='/legs'><p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Legs</p></a>
+                        </li>
+                    </Link>
 
-                    <Link href='/glutes'><li className="border-t md:border-none">
-                        <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Glutes</p>
-                    </li></Link>
+                    <Link href='/glutes'>
+                        <li className="border-t md:border-none">
+                            <a href='/glutes'><p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Glutes</p></a>
+                        </li>
+                    </Link>
 
-                    <Link href='/about'><li className="border-t md:border-none">
-                        <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</p>
-                    </li></Link>
+                    <Link href='/about'>
+                        <li className="border-t md:border-none">
+                            <a href='/about'><p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</p></a>
+                        </li>
+                    </Link>
 
-                    <Link href='/stopwatch'><li className="border-t md:border-none">
-                        <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">StopWatch</p>
-                    </li></Link>
+                    <Link href='/stopwatch'>
+                        <li className="border-t md:border-none">
+                            <a href='/stopwatch'><p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">StopWatch</p></a>
+                        </li>
+                    </Link>
 
-                    <Link href='/timer'><li className="border-t md:border-none">
-                        <p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Timer</p>
-                    </li></Link>
+                    <Link href='/timer'>
+                        <li className="border-t md:border-none">
+                            <a href='/timer'><p className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Timer</p></a>
+                        </li>
+                    </Link>
 
 
 
