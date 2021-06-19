@@ -21,34 +21,48 @@ const Navbar = () => {
                 </label>
 
                 <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
-                    <Link href='/'><li className="border-t md:border-none">
-                        <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
-                    </li></Link>
+                    <li className="border-t md:border-none">
+                        <Link href='/'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
+                        </Link>
+                    </li>
 
 
-                    <Link href='/arms'><li className="border-t md:border-none">
-                        <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Arms</a>
-                    </li></Link>
+                    <li className="border-t md:border-none">
+                        <Link href='/arms'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Arms</a>
+                        </Link>
+                    </li>
 
-                    <Link href='/legs'><li className="border-t md:border-none">
-                        <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Legs</a>
-                    </li></Link>
+                    <li className="border-t md:border-none">
+                        <Link href='/legs'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Legs</a>
+                        </Link>
+                    </li>
 
-                    <Link href='/glutes'><li className="border-t md:border-none">
-                        <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Glutes</a>
-                    </li></Link>
+                    <li className="border-t md:border-none">
+                        <Link href='/glutes'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Glutes</a>
+                        </Link>
+                    </li>
 
-                    <Link href='/about'><li className="border-t md:border-none">
-                        <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
-                    </li></Link>
+                    <li className="border-t md:border-none">
+                        <Link href='/about'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
+                        </Link>
+                    </li>
 
-                    <Link href='/stopwatch'><li className="border-t md:border-none">
-                        <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">StopWatch</a>
-                    </li></Link>
+                    <li className="border-t md:border-none">
+                        <Link href='/stopwatch'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">StopWatch</a>
+                        </Link>
+                    </li>
 
-                    <Link href='/timer'><li className="border-t md:border-none">
-                        <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Timer</a>
-                    </li></Link>
+                    <li className="border-t md:border-none">
+                        <Link href='/timer'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Timer</a>
+                        </Link>
+                    </li>
 
 
 
