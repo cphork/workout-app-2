@@ -43,7 +43,7 @@ const Workout = ({ arms }) => {
     // DELETE
 
     const handleDelete = (arm) => {
-        fetch(url + '/arms' + arm.ArmsId, {
+        fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev' + '/arms' + arm.ArmsId, {
             method: 'DELETE',
         })
             .then(() => getWorkouts())

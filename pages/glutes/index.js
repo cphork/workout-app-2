@@ -41,7 +41,7 @@ const Glutes = ({ glutes }) => {
     // DELETE
 
     const handleDelete = (glute) => {
-        fetch(url + '/glutes' + glute.GlutesId, {
+        fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev' + '/glutes' + glute.GlutesId, {
             method: 'DELETE',
         })
             .then(() => getWorkouts())
@@ -70,7 +70,7 @@ const Glutes = ({ glutes }) => {
                 <div key={glute.glutesId}>
                     <h1 className='mt-16 text-center text-2xl font-perm'>{glute.title}</h1>
                     <h3 className='text-center text-lg font-mono'>{glute.description}</h3>
-                    <h3 className='mt-8 ml-8 mr-8 text-center text-base mb-16 font-hyeon'>{glute.list}</h3>
+                    <h3 className='mt-8 ml-8 mr-8 text-center text-base mb-16 font-hyeon text-white'>{glute.list}</h3>
                     <button
                         className='heart-btn ml-44 bg-green-500 rounded-full h-12 w-14 mb-16'
                         onClick={() => {
