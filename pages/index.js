@@ -31,9 +31,7 @@ export default function Home() {
       <div className="max-w-md mx-auto bg-green-500 w-72 mt-16 group-hover:text-gray-900 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0">
-            <Link href='/arms' >
-              <a href='/arms'><Image className="h-48  w-full object-cover md:h-full md:w-48" src={Arms} alt="Man looking at item at a store" /></a>
-            </Link>
+            <Link href='/arms'><a><Image className="h-48  w-full object-cover md:h-full md:w-48" src={Arms} alt="Man looking at item at a store" /></a></Link>
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Arms Workout</div>
@@ -47,9 +45,7 @@ export default function Home() {
       <div className="max-w-md mx-auto bg-green-500 w-72 mt-16 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0">
-            <Link href='/legs'>
-              <a href='/legs'><Image className="h-48 w-full object-cover md:h-full md:w-48" src={Legs} alt="Man looking at item at a store" /></a>
-            </Link>
+            <Link href='/legs'><a><Image className="h-48 w-full object-cover md:h-full md:w-48" src={Legs} alt="Man looking at item at a store" /></a></Link>
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Legs Workout</div>
@@ -63,9 +59,7 @@ export default function Home() {
       <div className="max-w-md mx-auto bg-green-500 w-72 mt-16 mb-16 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0">
-            <Link href='/glutes'>
-              <a href='/glutes'><Image className="h-48 w-full object-cover md:h-full md:w-48" src={Glutes} alt="Man looking at item at a store" /></a>
-            </Link>
+            <Link href='/arms'><a><Image className="h-48 w-full object-cover md:h-full md:w-48" src={Glutes} alt="Man looking at item at a store" /></a></Link>
           </div>
           <div className="p-8 bg-green-500">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Glutes Workout</div>
