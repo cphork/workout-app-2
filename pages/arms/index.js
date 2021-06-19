@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Favorite from '../favorite/favorite'
 
 
-export const getStaticPaths = async () => {
+export const getStaticProps = async () => {
 
     const res = await fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev/arms')
     const data = await res.json();
@@ -82,13 +82,6 @@ const Workout = ({ arms }) => {
 
                 </div>
             ))}
-
-            {/* <Favorite
-                addFaveWorkout={addFaveWorkout}
-                faveWorkout={faveWorkout}
-                handleDelete={handleDelete}
-                deleteFaveWorkout={deleteFaveWorkout}
-            /> */}
 
         </div>
 
