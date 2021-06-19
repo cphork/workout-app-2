@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Favorite from '../favorite'
+import Favorite from '../favorite/favorite'
 
 
-export const getStaticProps = async () => {
+export const getStaticPaths = async () => {
     const res = await fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev/legs')
     const data = await res.json();
 
