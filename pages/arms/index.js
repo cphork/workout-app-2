@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Favorite from '../favorite/favorite'
+import Favorite from '../_components/_favorite'
 
 
 export const getStaticProps = async () => {
