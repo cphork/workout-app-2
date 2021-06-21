@@ -15,13 +15,15 @@ const Favorite = ({ faveWorkout, deleteFaveWorkout }) => {
 
                         <h5 className='mt-8 ml-8 mr-8 text-center text-base mb-16 font-hyeon font-perm text-red-200'>{arm.list}</h5>
 
-                        <button
-                            className='heart-btn ml-44 bg-red-400 rounded-full h-12 w-14 mb-24'
-                            onClick={() =>
-                                deleteFaveWorkout(index)}
-                        >-
+                        <div className='lg:flex justify-center mr-48'>
+                            <button
+                                className='heart-btn ml-44 bg-red-400 rounded-full h-12 w-14 mb-24'
+                                onClick={() =>
+                                    deleteFaveWorkout(index)}
+                            >-
 
-                        </button>
+                            </button>
+                        </div>
                     </article>
                 ))}
             </div>
