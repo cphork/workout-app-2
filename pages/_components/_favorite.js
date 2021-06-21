@@ -37,7 +37,7 @@ const Favorite = ({ faveWorkout, deleteFaveWorkout }) => {
         </div>
     )
 
-    return faveWorkout.length > 0 ? loaded() : loading()
+    return faveWorkout?.length > 0 ? loaded() : loading()
 
 }
 

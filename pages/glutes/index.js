@@ -1,5 +1,5 @@
-// import React, { useState } from "react";
-import Favorite from '../favorite/favorite'
+import React, { useState } from "react";
+import Favorite from '../_components/_favorite'
 
 
 

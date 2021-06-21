@@ -1,5 +1,5 @@
-// import React, { useState } from "react";
-import Favorite from '../favorite/favorite'
+import React, { useState } from "react";
+import Favorite from '../_components/_favorite'
 
 
 export const getStaticProps = async () => {
@@ -82,6 +82,13 @@ const Workout = ({ arms }) => {
 
                 </div>
             ))}
+
+            {/* <Favorite
+                addFaveWorkout={addFaveWorkout}
+                faveWorkout={faveWorkout}
+                handleDelete={handleDelete}
+                deleteFaveWorkout={deleteFaveWorkout}
+            /> */}
 
         </div>
 

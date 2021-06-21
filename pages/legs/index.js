@@ -1,24 +1,19 @@
-// import React, { useState } from "react";
-import Favorite from '../favorite/favorite'
+import React, { useState, useEffect } from "react";
+import Favorite from '../_components/_favorite'
 
 
-export const getStaticProps = async () => {
-    const res = await fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev/legs')
-    const data = await res.json();
+const Legs = () => {
 
 
-
-
-    return {
-        props: { legs: data }
-    }
-}
-const Legs = ({ legs }) => {
-    console.log('DATA WORKING', legs)
-
-
+    const [legs, setLegs] = useState([])
 
     const [faveWorkout, setFaveWorkout] = useState([])
+
+    const getLegs = async () => {
+        const res = await fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev/legs')
+        const data = await res.json();
+        setLegs(data)
+    }
 
     const getWorkouts = () => {
         fetch('https://cu6jqa8s0h.execute-api.us-west-2.amazonaws.com/dev' + '/legs')
@@ -47,7 +42,9 @@ const Legs = ({ legs }) => {
             .then(() => getWorkouts())
     }
 
-
+    useEffect(() => {
+        getLegs()
+    }, [])
 
 
     return (
@@ -68,7 +65,7 @@ const Legs = ({ legs }) => {
             />
 
 
-            {legs.body.map((leg) => (
+            {legs?.body?.map((leg) => (
                 <div key={leg.legsId}>
                     <h1 className='mt-16 text-center text-2xl font-perm'>{leg.title}</h1>
                     <h3 className='text-center text-lg font-mono'>{leg.description}</h3>
