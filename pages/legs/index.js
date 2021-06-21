@@ -54,10 +54,10 @@ const Legs = ({ legs }) => {
         <div>
             <h1 className='text-center mt-32 text-3xl font-perm text-green-200'>Legs Workout</h1>
 
-            <div className='lg:flex justify-center mr-48'>
-                <iframe className='mt-4 ml-8' width="350" height="360" src="https://www.youtube.com/embed/OQdtMrQ-Y8Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <div className='lg:flex justify-center'>
+                <iframe className='mt-4 ml-8 lg:mt-8' width="350" height="360" src="https://www.youtube.com/embed/rma9n_xL1i0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-                <iframe className='mt-8 ml-8' width="350" height="360" src="https://www.youtube.com/embed/UyTR2EjTAXU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe className='mt-8 ml-8' width="350" height="360" src="https://www.youtube.com/embed/WWo1tCf08_U" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
 

@@ -10,8 +10,10 @@ const Navbar = () => {
                 <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
 
                     {/* <Image className="w-24" src={dumbBells} alt='dumbbells logo' /> */}
+                    <p className='font-perm text-green-200'>[]==[]</p>
+                    <Link href='/'><a className="font-semibold text-xl tracking-tight text-green-200 font-perm underline text-3xl ml-4 mr-4">Workout App</a></Link>
+                    <p className='font-perm text-green-200'>[]==[]</p>
 
-                    <Link href='/'><a className="font-semibold text-xl tracking-tight text-green-200 font-perm underline text-3xl">Workout App</a></Link>
                 </div>
 
                 <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
