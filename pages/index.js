@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Muscles from '../public/muscles.gif';
 
 
@@ -9,7 +10,7 @@ export default function Home() {
       <div className='lg:flex justify-center mb-24 mt-24 flex justify-center'>
         <Image className='ml-3' width='370' height='420' src={Muscles} alt='buff lady' />
       </div>
-      <a href='/home' target="_blank" rel="noopener noreferrer"><h1 className='mb-16 underline lg:hover:text-green-200 text-center text-white font-mono mt-4 uppercase'>Take Me To The Workouts</h1></a>
+      <Link href='/home'><h1 className='mb-16 underline lg:hover:text-green-200 text-center text-white font-mono mt-4 uppercase'>Take Me To The Workouts</h1></Link>
 
       {/* BLOGS LINKED TO EXTERNAL SOURCE */}
       <p className='font-perm text-center text-2xl text-green-200'>Fitness Blogs</p>
