@@ -10,9 +10,9 @@ const Navbar = () => {
                 <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
 
                     {/* <Image className="w-24" src={dumbBells} alt='dumbbells logo' /> */}
-                    <p className='font-perm text-green-200'>[]==[]</p>
+                    <p className='font-perm text-green-200'>[]=[]</p>
                     <Link href='/'><a className="font-semibold text-xl tracking-tight text-green-200 font-perm underline text-3xl ml-4 mr-4">Workout App</a></Link>
-                    <p className='font-perm text-green-200'>[]==[]</p>
+                    <p className='font-perm text-green-200'>[]=[]</p>
 
                 </div>
 
@@ -22,47 +22,48 @@ const Navbar = () => {
                     <span className="navicon flex items-center relative"></span>
                 </label>
 
+
                 <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
                     <li className="border-t md:border-none">
-                        <Link href='/'>
-                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
+                        <Link href='/home'>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-white hover:text-grey-darker">Home</a>
                         </Link>
                     </li>
 
 
                     <li className="border-t md:border-none">
                         <Link href='/arms'>
-                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Arms</a>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-white hover:text-grey-darker">Arms</a>
                         </Link>
                     </li>
 
                     <li className="border-t md:border-none">
                         <Link href='/legs'>
-                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Legs</a>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-white hover:text-grey-darker">Legs</a>
                         </Link>
                     </li>
 
                     <li className="border-t md:border-none">
                         <Link href='/glutes'>
-                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Glutes</a>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-white hover:text-grey-darker">Glutes</a>
                         </Link>
                     </li>
 
                     <li className="border-t md:border-none">
                         <Link href='/about'>
-                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-white hover:text-grey-darker">About</a>
                         </Link>
                     </li>
 
                     <li className="border-t md:border-none">
                         <Link href='/stopwatch'>
-                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">StopWatch</a>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-white hover:text-grey-darker">StopWatch</a>
                         </Link>
                     </li>
 
                     <li className="border-t md:border-none">
                         <Link href='/timer'>
-                            <a className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Timer</a>
+                            <a className="block md:inline-block px-4 py-3 no-underline text-white hover:text-grey-darker">Timer</a>
                         </Link>
                     </li>
 
