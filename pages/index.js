@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Barbell from '../public/barbell.jpg';
+import Barbell from '../public/test.jpeg';
 import CurlsCropped from '../public/curlscropped.jpg';
 import Silohuette from '../public/silhouette.jpg';
 
